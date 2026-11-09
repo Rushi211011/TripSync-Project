@@ -1,0 +1,23 @@
+{
+  "records_read": 2,
+  "records_cleaned": 2,
+  "records_rejected": 0,
+  "duplicate_records": 0,
+  "totals_by_currency": {
+    "INR": 2100.0
+  },
+  "spending_by_category": [
+    {
+      "Currency": "INR",
+      "Category": "Other",
+      "Amount": 2100.0
+    }
+  ],
+  "monthly_spending": [
+    {
+      "Currency": "INR",
+      "Month": "2026-11",
+      "Amount": 2100.0
+    }
+  ]
+}

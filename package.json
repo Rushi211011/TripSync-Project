@@ -1,0 +1,29 @@
+{
+  "name": "tripsync-ai-itinerary-expense-planner",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node run-dev.js",
+    "dev:api": "node --watch server/index.js",
+    "dev:web": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start:api": "node server/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.1",
+    "firebase": "^12.11.0",
+    "lucide-react": "^0.553.0",
+    "mysql2": "^3.24.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

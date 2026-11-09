@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripSync: AI Itinerary & Expense Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0ea5e9', // sky-500
+              'primary-focus': '#0284c7', // sky-600
+              'primary-content': '#ffffff',
+              secondary: '#f59e0b', // amber-500
+              'secondary-focus': '#d97706', // amber-600
+              accent: '#22d3ee', // cyan-400
+              neutral: '#334152', // slate-700
+              'base-100': '#f8fafc', // slate-50
+              'base-200': '#f1f5f9', // slate-100
+              'base-300': '#e2e8f0', // slate-200
+              info: '#0ea5e9', // sky-500
+              success: '#22c55e', // green-500
+              warning: '#facc15', // yellow-400
+              error: '#ef4444', // red-500
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            },
+          },
+        },
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-base-100 font-sans">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
